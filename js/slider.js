@@ -1,21 +1,19 @@
-const slider = document.querySelector('.slider');
-let isDown = false;
-let startX;
-let scrollLeft;
+document.addEventListener("DOMContentLoaded", () => {
+  const slider = document.querySelector(".investments .slider");
+  const slides = document.querySelectorAll(".investments .slide");
+  const prevBtn = document.querySelector(".investments .slider-btn.prev");
+  const nextBtn = document.querySelector(".investments .slider-btn.next");
 
-if (slider) {
-  slider.addEventListener('mousedown', e => {
-    isDown = true;
-    startX = e.pageX - slider.offsetLeft;
-    scrollLeft = slider.scrollLeft;
-  });
-  slider.addEventListener('mouseleave', () => { isDown = false; });
-  slider.addEventListener('mouseup', () => { isDown = false; });
-  slider.addEventListener('mousemove', e => {
-    if (!isDown) return;
-    e.preventDefault();
-    const x = e.pageX - slider.offsetLeft;
-    const walk = (x - startX) * 2;
-    slider.scrollLeft = scrollLeft - walk;
-  });
-}
+  let index = 0;
+
+  function showSlide(i) {
+    if (i < 0) index = slides.length - 1;
+    else if (i >= slides.length) index = 0;
+    else index = i;
+
+    slider.style.transform = `translateX(-${index * 100}%)`;
+  }
+
+  prevBtn.addEventListener("click", () => showSlide(index - 1));
+  nextBtn.addEventListener("click", () => showSlide(index + 1));
+});
