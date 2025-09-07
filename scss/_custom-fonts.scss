@@ -1,0 +1,28 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+
+@font-face {
+  font-family: 'Clash Display';
+  src: url('../fonts/ClashDisplay-Regular.woff2') format('woff2'),
+       url('../fonts/ClashDisplay-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Clash Display Medium';
+  src: url('../fonts/ClashDisplay-Medium.woff2') format('woff2'),
+       url('../fonts/ClashDisplay-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Clash Display Bold';
+  src: url('../fonts/ClashDisplay-Bold.woff2') format('woff2'),
+       url('../fonts/ClashDisplay-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
