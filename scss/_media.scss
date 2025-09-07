@@ -1,0 +1,37 @@
+﻿html {
+    font-size: 62.5%;
+}
+
+
+@media (max-width: 1450px) {
+    html {
+        font-size: 49%;
+        -webkit-text-size-adjust: none;
+    }
+}
+
+@media (max-width: 1189px) {
+    html {
+        font-size: 40.5%;
+        -webkit-text-size-adjust: none;
+    }
+}
+
+@media (max-width: 1028px) {
+    html {
+        font-size: 35.5%;
+        -webkit-text-size-adjust: none;
+    }
+}
+
+@media (max-width: 767px) {
+
+    html {
+        font-size: 48%;
+        -webkit-text-size-adjust: none;
+    }
+}
+.container{
+    max-width: 128rem;
+    margin: 0 auto;
+}

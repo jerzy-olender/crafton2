@@ -1,25 +1,30 @@
 .hero {
   padding: 8rem 0;
-  background: $white;
 
-  &-heading{
+  &-heading {
     font-size: 7.5rem;
-    color: $black;
-    margin-bottom: 1rem;
+    line-height: 1.2;
+    margin-bottom: 2rem;
   }
 
-  p {
-    max-width: 60rem;
-    margin: 0 auto 2rem;
-    color: $black;
+  &-text {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
   }
-
-  .btn {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    background: $brand;
-    color: $white;
-    border-radius: 999px;
-    text-decoration: none;
+  &-buttons-wrapper{
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-column-gap: 2rem;
+       -moz-column-gap: 2rem;
+            column-gap: 2rem;
+  }
+  &-button{
+    font-size: 1.5rem;
+    width: 24.6rem;
+    height: 5.6rem;
   }
 }
+
