@@ -1,6 +1,7 @@
-<header>
+<header class="main-header">
   <div class="container">
-    <div class="logo">
+    <div class="main-header-wrapper">
+      <div class="logo">
     <img src="media/logo.svg" alt="Logo">
   </div>
   <nav>
@@ -11,5 +12,6 @@
       <li><a href="#">Kontakt</a></li>
     </ul>
   </nav>
+    </div>
   </div>
 </header>
