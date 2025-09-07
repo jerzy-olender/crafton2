@@ -1,0 +1,66 @@
+﻿.investments{
+    padding: 0 0 8rem 0;
+    &-heading{
+        @include text-style($font-heading, 500, 4.2rem, 1.2, $heading-color, uppercase); 
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    &-text{
+          @include text-style($font-body, 400, 1.6rem, 1.5, $text-color);
+          text-align: center;
+    margin-bottom: 2rem;
+    }
+}
+
+.investments {
+  .slider {
+    display: -webkit-box;
+    display: flex;
+    gap: 2rem;                 // odstęp między slajdami
+    overflow-x: auto;          // POZIOMY SCROLL
+    overflow-y: hidden;
+    -ms-scroll-snap-type: x mandatory;
+        scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    cursor: -webkit-grab;
+    cursor: grab;
+    padding-bottom: .5rem;     // żeby scrollbar (jeśli jest) nie nachodził
+
+    // ukrycie scrollbara
+    scrollbar-width: none;     // Firefox
+    &::-webkit-scrollbar { display: none; } // WebKit
+  }
+
+  .slider.dragging {
+    cursor: -webkit-grabbing;
+    cursor: grabbing;
+    scroll-behavior: auto;     // bez wygładzania podczas drag
+  }
+
+  .slide {
+    -webkit-box-flex: 0;
+            flex: 0 0 80%;             // 80% szerokości kontenera (zmień wg designu)
+    max-width: 80%;
+    scroll-snap-align: start;
+    background: #fff;
+    border-radius: 1.2rem;
+  }
+
+  .slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    -webkit-user-drag: none;
+    pointer-events: none;      // żeby mouse/touch nie „łapało” obrazka
+  }
+}
+
+// Na węższych ekranach możesz zmniejszyć szerokość slajdu:
+@media (max-width: 768px) {
+  .investments .slide { flex-basis: 90%; max-width: 90%; }
+}

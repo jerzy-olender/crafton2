@@ -1,10 +1,11 @@
 // import zmiennych i sekcji
-@import "variables";
 @import "custom-fonts";
+@import "variables";
+@import "mixins";
 @import "reset";
 @import "media";
 @import "typography";
-@import "mixins";
 @import "component";
 @import "header";
 @import "hero";
+@import "investments";
