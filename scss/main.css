@@ -1,0 +1,34 @@
+.hero {
+  padding: 4rem 2rem;
+  background: #ffffff;
+  text-align: center;
+}
+.hero h1 {
+  color: #316FAF;
+  margin-bottom: 1rem;
+}
+.hero p {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  color: #121212;
+}
+.hero .btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #316FAF;
+  color: #ffffff;
+  border-radius: 999px;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  color: #121212;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+}/*# sourceMappingURL=main.css.map */
