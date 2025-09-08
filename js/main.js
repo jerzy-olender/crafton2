@@ -18,10 +18,6 @@ document.addEventListener("DOMContentLoaded", () => {
     })
       .then(res => res.text())
       .then(data => {
-        console.log("=== DEBUG AJAX RESPONSE START ===");
-        console.log(data);
-        console.log("=== DEBUG AJAX RESPONSE END ===");
-
         if (data.trim()) {
           itemsContainer.insertAdjacentHTML("beforeend", data);
           loadBtn.disabled = false;

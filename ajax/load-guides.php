@@ -13,12 +13,12 @@ if ($items) {
     foreach ($items as $item): ?>
         <div class="item">
             <img class="img-fluid"
-                 src="<?php echo htmlspecialchars($item['image'], ENT_QUOTES, 'UTF-8'); ?>"
+                 src="<?php echo $item['image']; ?>"
                  alt="real estate item image">
             <h3 class="item-heading">
-                <?php echo htmlspecialchars($item['title'], ENT_QUOTES, 'UTF-8'); ?>
+                <?php echo $item['title']; ?>
             </h3>
-            <a href="<?php echo htmlspecialchars($item['link'], ENT_QUOTES, 'UTF-8'); ?>" class="item-button">
+            <a href="<?php echo $item['link']; ?>" class="item-button">
                 PRZEJDŹ DO ARTYKUŁU
             </a>
         </div>

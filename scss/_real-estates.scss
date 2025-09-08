@@ -36,4 +36,7 @@
             }
         }
     }
+    .load-more{
+        @include button-base(26rem, 5.6rem, 1.5rem, $brand-color, #fff);
+    }
 }
