@@ -6,8 +6,7 @@
     </p>
 
     <div class="slider-wrapper">
-      <button class="slider-btn prev">‹</button>
-
+      <button class="slider-btn prev"><img class="img-fluid slider-btn-image" src="images/arrow-prev.svg" alt=""></button>
       <div class="slider">
         <div class="slide">
           <div class="left-side">
@@ -16,7 +15,8 @@
               <span class="icon-text">Poznań 20-300</span>
             </div>
             <h3 class="slide-heading">Poznań Park</h3>
-            <p class="slide-text">Opis inwestycji…</p>
+            <p class="slide-text">Poznań Park to kameralne osiedle nowoczesnych domów, które harmonijnie łączy komfort życia z bliskością natury. Położone zaledwie 10 minut od centrum Poznania, oferuje ciszę i zieleń bez kompromisów – z łatwym dostępem
+              do miejskich udogodnień.</p>
             <a href="#" class="slide-button">Poznaj szczegóły</a>
           </div>
           <div class="right-side">
@@ -27,7 +27,8 @@
         <div class="slide">
           <div class="left-side">
             <h3 class="slide-heading">Warszawa Park</h3>
-            <p class="slide-text">Opis inwestycji w Warszawie…</p>
+            <p class="slide-text">Warszawa Park to kameralne osiedle nowoczesnych domów, które harmonijnie łączy komfort życia z bliskością natury. Położone zaledwie 10 minut od centrum Warszawy, oferuje ciszę i zieleń bez kompromisów – z łatwym dostępem
+              do miejskich udogodnień.</p>
             <a href="#" class="slide-button">Poznaj szczegóły</a>
           </div>
           <div class="right-side">
@@ -36,7 +37,7 @@
         </div>
       </div>
 
-      <button class="slider-btn next">›</button>
+      <button class="slider-btn next"><img class="img-fluid slider-btn-image" src="images/arrow-next.svg" alt=""></button>
     </div>
   </div>
 </section>

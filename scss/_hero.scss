@@ -18,6 +18,12 @@
        -moz-column-gap: 2rem;
             column-gap: 2rem;
   }
+  .main-button-brand{
+    @include button-base(24.6rem, 5.6rem, 1.5rem, $brand-color, #fff);
+  }
+  .main-button-white {
+   @include button-base(17.5rem, 5.6rem, 1.5rem, $white, $heading-color, $grey);
+  }
   
 }
 
