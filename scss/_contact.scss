@@ -1,0 +1,34 @@
+﻿.contact {
+    padding: 8rem 0;
+    background-color: $form-bg;
+
+    &-heading {
+        @include text-style($font-heading, 500, 4.2rem, 1.2, $heading-color, uppercase);
+        margin-bottom: 2rem;
+    }
+
+    .form-wrapper {
+        padding: 4.6rem 3.2rem;
+        background-color: $form-subbg;
+        border-radius: 1.4rem;
+
+        .contact-subheading {
+            @include text-style($font-heading, 500, 1.8rem, 1.6, $heading-color, uppercase);
+            margin-bottom: 4.2rem;
+        }
+
+        form {
+            .inputs-wrapper{
+                display: -webkit-box;
+                display: flex;
+            }
+            .field-wrapper {
+                display: -webkit-box;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                flex-direction: column;
+            }
+        }
+    }
+}
