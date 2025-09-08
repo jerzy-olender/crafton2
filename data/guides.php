@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 $guides = [
     [
         "image" => "images/real-estate-guide-item-image1.png",

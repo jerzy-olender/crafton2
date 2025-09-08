@@ -1,4 +1,4 @@
-﻿<?php include __DIR__ . '/../data/guides.php'; ?>
+<?php include __DIR__ . '/../data/guides.php'; ?>
 
 <section class="real-estates">
   <div class="container">
