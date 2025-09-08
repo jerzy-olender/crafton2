@@ -1,5 +1,4 @@
 <?php
-// Upewnij się, że w pliku NIE MA żadnych spacji ani pustych linii przed <?php
 header('Content-Type: text/html; charset=UTF-8');
 
 include __DIR__ . '/../data/guides.php';

@@ -18,16 +18,45 @@
         }
 
         form {
-            .inputs-wrapper{
+            .inputs-wrapper {
                 display: -webkit-box;
                 display: flex;
+                -webkit-box-pack: justify;
+                justify-content: space-between;
+                margin-bottom: 2rem;
             }
+
             .field-wrapper {
                 display: -webkit-box;
                 display: flex;
                 -webkit-box-orient: vertical;
                 -webkit-box-direction: normal;
                 flex-direction: column;
+
+                &:first-of-type {
+                    width: 31.9rem;
+                }
+
+                &:nth-of-type(2) {
+                    width: 33rem;
+                }
+
+                &:nth-of-type(3) {
+                    width: 52.7rem;
+                }
+
+                &.last {
+                    width: 100%;
+
+                    .field-input {
+                        min-height: 15.2rem;
+                    }
+                }
+            }
+
+            .send {
+                @include button-base(26rem, 5.6rem, 1.5rem, $brand-color, #fff);
+                margin-top: 4.2rem;
             }
         }
     }
