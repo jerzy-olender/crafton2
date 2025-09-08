@@ -11,15 +11,20 @@
         display: flex;
         -webkit-box-align: center;
         align-items: center;
-        -webkit-box-pack: justify;
-        justify-content: space-between;
+        -webkit-box-pack: start;
+        justify-content: flex-start;
         flex-wrap: wrap;
+        gap: 3.2rem;
 
         .item {
+            -webkit-box-flex: 1;
+            flex: 1 1 40.5rem;
             max-width: 40.5rem;
+            box-sizing: border-box;
             padding: 2.4rem;
             border: 1px solid $grey;
             border-radius: 1.2rem;
+            min-height: 50.515rem;
 
             &-heading {
                 @include text-style($font-heading, 500, 1.8rem, 1.6, $text-color);

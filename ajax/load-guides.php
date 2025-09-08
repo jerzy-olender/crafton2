@@ -1,16 +1,26 @@
-﻿<?php
+<?php
+// Upewnij się, że w pliku NIE MA żadnych spacji ani pustych linii przed <?php
+header('Content-Type: text/html; charset=UTF-8');
+
 include __DIR__ . '/../data/guides.php';
 
-$page = isset($_POST['page']) ? (int) $_POST['page'] : 1;
+$page    = isset($_POST['page']) ? (int) $_POST['page'] : 1;
 $perPage = 3;
 
-$offset = ($page - 1) * $perPage;
-$items = array_slice($guides, $offset, $perPage);
+$items = array_slice($guides, ($page - 1) * $perPage, $perPage);
 
-foreach($items as $item): ?>
-  <div class="item">
-    <img src="<?php echo $item['image']; ?>" alt="real estate item image">
-    <h3 class="item-heading"><?php echo $item['title']; ?></h3>
-    <a href="<?php echo $item['link']; ?>" class="item-button">PRZEJDŹ DO ARTYKUŁU</a>
-  </div>
-<?php endforeach; ?>
+if ($items) {
+    foreach ($items as $item): ?>
+        <div class="item">
+            <img class="img-fluid"
+                 src="<?php echo htmlspecialchars($item['image'], ENT_QUOTES, 'UTF-8'); ?>"
+                 alt="real estate item image">
+            <h3 class="item-heading">
+                <?php echo htmlspecialchars($item['title'], ENT_QUOTES, 'UTF-8'); ?>
+            </h3>
+            <a href="<?php echo htmlspecialchars($item['link'], ENT_QUOTES, 'UTF-8'); ?>" class="item-button">
+                PRZEJDŹ DO ARTYKUŁU
+            </a>
+        </div>
+    <?php endforeach;
+}

@@ -6,7 +6,7 @@
     <div class="items">
       <?php foreach(array_slice($guides, 0, 3) as $item): ?>
         <div class="item">
-          <img src="<?php echo $item['image']; ?>" alt="real estate item image">
+          <img class="img-fluid" src="<?php echo $item['image']; ?>" alt="real estate item image">
           <h3 class="item-heading"><?php echo $item['title']; ?></h3>
           <a href="<?php echo $item['link']; ?>" class="item-button">
             PRZEJDŹ DO ARTYKUŁU
