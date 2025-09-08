@@ -1,0 +1,17 @@
+﻿.main-footer {
+    padding: 2rem 0 4rem 0;
+    background-color: $white;
+
+    .copyright {
+        @include text-style($font-body, 400, 1.4rem, 1.5, $text-color);
+        margin-bottom: 1.6rem;
+        text-align: center;
+        a{
+            color: $text-color;
+            font-weight: 600;
+        }
+        &:last-of-type{
+            margin-bottom: 0;
+        }
+    }
+}

@@ -17,3 +17,92 @@
     border: 1px solid $grey;
     border-radius: 0.8rem;
 }
+
+/* ========== zmienne do łatwego strojenia ========== */
+:root{
+  --chk-size: 1.8rem;           /* średnica „kółka” */
+  --chk-border: 2px;            /* grubość obwódki */
+  --chk-color: #316FAF;         /* kolor obwódki i wypełnienia */
+  --chk-gap: .8rem;             /* odstęp kółko ↔ tekst */
+}
+
+.form-row{
+  display:-webkit-box;
+  display:flex;
+  -webkit-box-align:start;
+          align-items:flex-start;
+}
+
+.chk{
+  position:absolute;
+  opacity:0;
+  width:0;
+  height:0;
+}
+.chk-label{
+  position:relative;
+  display:-webkit-box;
+  display:flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align:start;
+          align-items:flex-start;
+  gap: var(--chk-gap);
+  line-height:1.4;
+  cursor:pointer;
+  -webkit-user-select:none;
+     -moz-user-select:none;
+      -ms-user-select:none;
+          user-select:none;
+
+  padding-left: calc(var(--chk-size) + var(--chk-gap));
+}
+
+/* „kółko” (obwódka) */
+.chk + .chk-label::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:.2rem;                     /* delikatne wyrównanie optyczne do linii tekstu */
+  width: var(--chk-size);
+  height: var(--chk-size);
+  border: var(--chk-border) solid var(--chk-color);
+  border-radius: 50%;
+  background:#fff;
+  box-sizing: border-box;
+}
+
+/* „wypełnienie” po zaznaczeniu */
+.chk + .chk-label::after{
+  content:"";
+  position:absolute;
+  left: calc(var(--chk-size)/2);
+  top: calc(.2rem + var(--chk-size)/2);
+  width: calc(var(--chk-size) * .6);
+  height: calc(var(--chk-size) * .6);
+  -webkit-transform: translate(-50%,-50%) scale(0.6);
+          transform: translate(-50%,-50%) scale(0.6);
+  border-radius:50%;
+  background: var(--chk-color);
+  opacity:0;
+  -webkit-transition: opacity .18s ease, -webkit-transform .18s ease;
+  transition: opacity .18s ease, -webkit-transform .18s ease;
+  transition: transform .18s ease, opacity .18s ease;
+  transition: transform .18s ease, opacity .18s ease, -webkit-transform .18s ease;
+}
+.chk:checked + .chk-label::after{
+  opacity:1;
+  -webkit-transform: translate(-50%,-50%) scale(1);
+          transform: translate(-50%,-50%) scale(1);
+}
+
+.chk:disabled + .chk-label{
+  opacity:.6;
+  cursor:not-allowed;
+}
+
+/* redukcja animacji dla prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce){
+  .chk + .chk-label::after{ -webkit-transition:none; transition:none; }
+}
