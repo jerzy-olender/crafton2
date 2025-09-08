@@ -7,27 +7,27 @@ $guides = [
     ],
     [
         "image" => "images/real-estate-guide-item-image2.png",
-        "title" => "Na co zwrócić uwagę przy zakupie mieszkania z rynku wtórnego?",
+        "title" => "Czym różni się inwestycja w nieruchomość od zwykłego zakupu?",
         "link"  => "#"
     ],
     [
         "image" => "images/real-estate-guide-item-image3.png",
-        "title" => "Kredyt hipoteczny krok po kroku – poradnik dla kupujących.",
+        "title" => "5 technologii, które powinny mieć nowoczesne domy w 2025 roku.",
         "link"  => "#"
     ],
     [
         "image" => "images/real-estate-guide-item-image1.png",
-        "title" => "Czy warto kupić nieruchomość na wynajem w 2025?",
+        "title" => "Jak kupić nieruchomość i nie zwariować? Przewodnik dla początkujących.",
         "link"  => "#"
     ],
     [
         "image" => "images/real-estate-guide-item-image2.png",
-        "title" => "Jak negocjować cenę mieszkania z deweloperem?",
+        "title" => "Czym różni się inwestycja w&nbsp;nieruchomość od&nbspzwykłego zakupu?",
         "link"  => "#"
     ],
   [
         "image" => "images/real-estate-guide-item-image3.png",
-        "title" => "Jak negocjować cenę mieszkania z deweloperem?",
+        "title" => "5 technologii, które powinny mieć nowoczesne domy w 2025 roku.",
         "link"  => "#"
     ]
 ];
