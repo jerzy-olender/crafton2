@@ -47,6 +47,11 @@
 }
 
 .chk-label {
+     font-family: "Inter", sans-serif;
+     font-size: 0.8rem;
+     line-height: 1.8;
+     letter-spacing: -2%;
+     color: $text-color;
    position: relative;
    display: -webkit-box;
    display: flex;
@@ -64,6 +69,13 @@
    user-select: none;
    padding-left: calc(var(--chk-size) + var(--chk-gap));
    margin-top: 2.6rem;
+}
+.chk-label span{
+      font-family: "Inter", sans-serif;
+     font-size: 0.8rem;
+     line-height: 1.8;
+     letter-spacing: -2%;
+     color: $text-color;
 }
 
 /* kółko (obwódka) */
@@ -121,4 +133,7 @@
 
 .button-arrow{
    max-width: 1.32rem;
+}
+.main-header .close-icon{
+   display: none;
 }
