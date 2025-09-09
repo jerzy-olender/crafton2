@@ -14,6 +14,6 @@
         </div>
       <?php endforeach; ?>
     </div>
-    <button class="load-more">Załaduj więcej</button>
+    <button class="load-more">Więcej poradników <img class="button-arrow" src="images/button-arrow.svg" alt="button arrow"></button>
   </div>
 </section>

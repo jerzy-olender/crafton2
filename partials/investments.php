@@ -17,7 +17,7 @@
             <h3 class="slide-heading">Poznań Park</h3>
             <p class="slide-text">Poznań Park to kameralne osiedle nowoczesnych domów, które harmonijnie łączy komfort życia z bliskością natury. Położone zaledwie 10 minut od centrum Poznania, oferuje ciszę i zieleń bez kompromisów – z łatwym dostępem
               do miejskich udogodnień.</p>
-            <a href="#" class="slide-button">Poznaj szczegóły</a>
+            <a href="#" class="slide-button">Poznaj szczegóły <img class="button-arrow" src="images/button-arrow.svg" alt="button arrow"></a>
           </div>
           <div class="right-side">
             <img src="images/our-investments-image.png" alt="Inwestycja 1" draggable="false">
@@ -29,7 +29,7 @@
             <h3 class="slide-heading">Warszawa Park</h3>
             <p class="slide-text">Warszawa Park to kameralne osiedle nowoczesnych domów, które harmonijnie łączy komfort życia z bliskością natury. Położone zaledwie 10 minut od centrum Warszawy, oferuje ciszę i zieleń bez kompromisów – z łatwym dostępem
               do miejskich udogodnień.</p>
-            <a href="#" class="slide-button">Poznaj szczegóły</a>
+            <a href="#" class="slide-button">Poznaj szczegóły <img class="button-arrow" src="images/button-arrow.svg" alt="button arrow"></a>
           </div>
           <div class="right-side">
             <img src="images/our-investments-image.png" alt="Inwestycja 2" draggable="false">

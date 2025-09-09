@@ -8,6 +8,10 @@
         align-items: center;
         -webkit-box-pack: justify;
         justify-content: space-between;
+        .hamburger{
+            max-width: 5rem;
+            display: none;
+        }
     }
 
     &-logo-wrapper {
@@ -30,6 +34,9 @@
                 @include text-style($font-heading, 500, 1.5rem, 1, $heading-color, uppercase);
             }
         }
+    }
+    .additional-link{
+           @include button-base(14.4rem, 4.6rem, 1.5rem, $brand-color, #fff);
     }
 
 }

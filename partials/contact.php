@@ -31,7 +31,7 @@
             <span>Informujemy, że: 1. Administratorem Pani/Pana danych osobowych jest RealEstate sp. z o.o. z siedzibą w Poznaniu przy ul. Długiej 5 lok. 25, 01-200 Poznań (KRS nr 0001000000) (dalej „Administrator”) e-mail: biuro@realestate.com</span>
           </label>
         </div>
-        <button class="send" type="submit">Wyślij wiadomość</button>
+        <button class="send" type="submit">Wyślij wiadomość <img class="button-arrow" src="images/button-arrow.svg" alt="button arrow"></button>
       </form>
     </div>
   </div>

@@ -1,0 +1,61 @@
+﻿@media (max-width: 767px) {
+    .hero-heading{
+        font-size: 5rem;
+    }
+    .hero-buttons-wrapper{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
+                row-gap: 3rem;
+                -webkit-box-align: start;
+                        align-items: flex-start;
+    }
+    .main-header nav{
+        display: none;
+    }
+    .main-header .hamburger{
+        display: block;
+    }
+    section, .main-header, .main-footer{
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+    }
+    .investments .slider-wrapper .slide{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
+    }
+    .investments .slider-wrapper .slide .left-side{
+        max-width: 100%;
+        border: none;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .investments .slider-wrapper .slide .right-side{
+        max-width: 100%;
+    }
+    .investments .slider-wrapper .slider-btn{
+        bottom: 5rem;
+        top: unset;
+    }
+    .contact .form-wrapper form .inputs-wrapper{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
+    }
+     .contact .form-wrapper form .field-wrapper{
+        margin-bottom: 2rem;
+     }
+    .contact .form-wrapper form .field-wrapper:first-of-type{
+        width: 100%;
+    }
+    .contact .form-wrapper form .field-wrapper:nth-of-type(2){
+        width: 100%;
+    }
+    .contact .form-wrapper form .field-wrapper:nth-of-type(3){
+        width: 100%;
+    }
+    .investments-heading, .real-estates-heading, .contact-heading{
+        font-size: 3.2rem;
+    }
+}
