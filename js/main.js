@@ -35,3 +35,55 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   });
 });
+
+// JS – toggle menu
+(function () {
+  const header = document.querySelector('.main-header');
+  const btn = header?.querySelector('.hamburger');
+  const nav = header?.querySelector('nav');
+
+  if (!header || !btn || !nav) return;
+
+  const openMenu = () => {
+    header.classList.add('is-open');
+    btn.setAttribute('aria-expanded', 'true');
+    nav.removeAttribute('hidden');
+  };
+
+  const closeMenu = () => {
+    header.classList.remove('is-open');
+    btn.setAttribute('aria-expanded', 'false');
+    nav.setAttribute('hidden', '');
+  };
+
+  btn.addEventListener('click', () => {
+    const willOpen = !header.classList.contains('is-open');
+    willOpen ? openMenu() : closeMenu();
+  });
+
+  // Zamknij ESC
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && header.classList.contains('is-open')) {
+      closeMenu();
+      btn.focus();
+    }
+  });
+
+  // Zamknij po kliknięciu w link **lub** w .close-icon
+  nav.addEventListener('click', (e) => {
+    if (e.target.closest('.close-icon, a')) {
+      closeMenu();
+    }
+  });
+})();
+
+// Wstrzyknięcie ikonki do <nav>
+document.addEventListener('DOMContentLoaded', () => {
+  const nav = document.querySelector('nav');
+  if (nav) {
+    nav.insertAdjacentHTML(
+      'afterbegin',
+      '<img src="images/close-icon.svg" class="img-fluid close-icon" alt="Zamknij menu">'
+    );
+  }
+});
