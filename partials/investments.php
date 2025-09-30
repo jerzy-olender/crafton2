@@ -20,7 +20,7 @@
             <a href="#" class="slide-button">Poznaj szczegóły <img class="button-arrow" src="images/button-arrow.svg" alt="button arrow"></a>
           </div>
           <div class="right-side">
-            <img src="images/our-investments-image.png" alt="Inwestycja 1" draggable="false">
+            <img class="img-fluid" src="images/our-investments-image.png" alt="Inwestycja 1" draggable="false">
           </div>
         </div>
 
@@ -36,7 +36,7 @@
             <a href="#" class="slide-button">Poznaj szczegóły <img class="button-arrow" src="images/button-arrow.svg" alt="button arrow"></a>
           </div>
           <div class="right-side">
-            <img src="images/our-investments-image.png" alt="Inwestycja 1" draggable="false">
+            <img class="img-fluid" src="images/our-investments-image.png" alt="Inwestycja 1" draggable="false">
           </div>
         </div>
       </div>
